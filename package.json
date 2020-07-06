@@ -11,7 +11,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
-    "lint-diff": "git diff --name-only --cached --relative | grep -E \"\\.(ts|tsx|js|jsx)$\" | xargs eslint",
+    "lint-diff": "git diff --name-only --cached --no-error-on-unmatched-pattern --relative | grep -E \"\\.(ts|tsx|js|jsx)$\" | xargs eslint",
     "tsc": "tsc"
   },
   "dependencies": {
@@ -49,7 +49,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-diff && npm run tsc"
+      "pre-commit": "yarn run lint-diff && yarn run tsc"
     }
   }
 }
