@@ -11,17 +11,15 @@ interface Props {
 
 const Book = ({ title, author, image }: Props) => {
   return (
-    <>
-      <View style={styles.container}>
-        <View style={styles.content}>
-          <Image style={styles.image} source={{ uri: image }} />
-          <View>
-            <Text style={styles.title}>{title}</Text>
-            <Text style={styles.author}>{author}</Text>
-          </View>
+    <View style={styles.container}>
+      <View style={styles.content}>
+        <Image style={styles.image} source={{ uri: image }} />
+        <View>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.author}>{author}</Text>
         </View>
       </View>
-    </>
+    </View>
   );
 };
 
