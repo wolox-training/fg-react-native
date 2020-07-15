@@ -9,7 +9,7 @@ const Book = (props: BookProps) => {
     <View style={styles.container}>
       <View style={styles.content}>
         <Image style={styles.image} source={{ uri: props.image }} resizeMode={'contain'} />
-        <View>
+        <View style={styles.text}>
           <Text style={styles.title}>{props.title}</Text>
           <Text style={styles.author}>{props.author}</Text>
         </View>

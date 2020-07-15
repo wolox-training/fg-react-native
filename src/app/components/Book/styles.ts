@@ -15,6 +15,9 @@ export default StyleSheet.create({
   content: {
     flexDirection: 'row'
   },
+  text: {
+    flex: 1
+  },
   title: {
     fontSize: SIZES.MEDIUM,
     color: COLORS.GREY,
