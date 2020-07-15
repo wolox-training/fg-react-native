@@ -1,19 +1,21 @@
 import React from 'react';
-import { View, StatusBar } from 'react-native';
+import { View, StatusBar, FlatList, ListRenderItem } from 'react-native';
 import Book from '@app/components/Book';
+import { BookProps } from '@interfaces/books';
+import { BOOK_LIST } from '@constants/books';
 
 import styles from './styles';
 
 const App = () => {
+  const renderBook = ({ title, author, image }: BookProps) => (
+    <Book title={title} author={author} image={image} />
+  );
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-        <Book
-          title="A Little Bird Told Me"
-          author="Timothy Cross"
-          image="http://wolox-training.s3.amazonaws.com/uploads/6942334-M.jpg"
-        />
+        <FlatList data={BOOK_LIST} renderItem={renderBook} keyExtractor={item => item.id}/>
       </View>
     </>
   );
