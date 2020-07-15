@@ -1,16 +1,15 @@
 import { StyleSheet } from 'react-native';
 import { COLORS } from '@constants/colors';
-import { SIZES } from '@constants/fonts';
+import { SIZES, WEIGHT_BOLD, WEIGHT_300 } from '@constants/fonts';
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.WHITE,
-    width: 375,
-    height: 102,
     borderRadius: 5,
     marginHorizontal: 20,
     marginVertical: 10,
-    paddingLeft: 30,
+    paddingHorizontal: 30,
+    paddingVertical: 15,
     justifyContent: 'center'
   },
   content: {
@@ -19,12 +18,12 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: SIZES.MEDIUM,
     color: COLORS.GREY,
-    fontWeight: 'bold'
+    fontWeight: WEIGHT_BOLD
   },
   author: {
     fontSize: SIZES.SMALL,
     color: COLORS.GREY,
-    fontWeight: '300'
+    fontWeight: WEIGHT_300
   },
   image: {
     height: 60,
@@ -32,3 +31,5 @@ export const styles = StyleSheet.create({
     marginRight: 20
   }
 });
+
+export default styles;
