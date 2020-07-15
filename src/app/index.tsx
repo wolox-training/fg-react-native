@@ -7,15 +7,16 @@ import { BOOK_LIST } from '@constants/books';
 import styles from './styles';
 
 const App = () => {
-  const renderBook = ({ title, author, image }: BookProps) => (
-    <Book title={title} author={author} image={image} />
+  const keyExtractor = (item: BookProps, _index: number) => item.title;
+  const renderBook: ListRenderItem<BookProps> = ({ item }) => (
+    <Book title={item.title} author={item.author} image={item.image} />
   );
 
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-        <FlatList data={BOOK_LIST} renderItem={renderBook} keyExtractor={item => item.id}/>
+        <FlatList<BookProps> data={BOOK_LIST} renderItem={renderBook} keyExtractor={keyExtractor} />
       </View>
     </>
   );

@@ -1,22 +1,17 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
+import { BookProps } from '@interfaces/books';
 
 import styles from './styles';
 
-interface Props {
-  title: string;
-  author: string;
-  image: string;
-}
-
-const Book = ({ title, author, image }: Props) => {
+const Book = (props: BookProps) => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Image style={styles.image} source={{ uri: image }} />
+        <Image style={styles.image} source={{ uri: props.image }} />
         <View>
-          <Text style={styles.title}>{title}</Text>
-          <Text style={styles.author}>{author}</Text>
+          <Text style={styles.title}>{props.title}</Text>
+          <Text style={styles.author}>{props.author}</Text>
         </View>
       </View>
     </View>

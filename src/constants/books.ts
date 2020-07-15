@@ -1,6 +1,6 @@
 export const BOOK_LIST = [
   {
-    id: 1,
+    id: '1',
     author: 'Lois Duncan',
     title: 'Locked in time',
     genre: 'suspense',
@@ -9,7 +9,7 @@ export const BOOK_LIST = [
     image: 'http://wolox-training.s3.amazonaws.com/uploads/6942334-M.jpg'
   },
   {
-    id: 2,
+    id: '2',
     author: 'Christopher Pike',
     title: 'Scavenger Hunt',
     genre: 'suspense',
@@ -18,7 +18,7 @@ export const BOOK_LIST = [
     image: 'http://wolox-training.s3.amazonaws.com/uploads/6963511-M.jpg'
   },
   {
-    id: 3,
+    id: '3',
     author: 'Christopher Pike',
     title: 'Scavenger Hunt',
     genre: 'suspense',
@@ -27,7 +27,7 @@ export const BOOK_LIST = [
     image: 'http://wolox-training.s3.amazonaws.com/uploads/6963511-M.jpg'
   },
   {
-    id: 4,
+    id: '4',
     author: 'Paula Hawkins',
     title: 'The Girl on the Train\n',
     genre: 'suspense',
@@ -36,7 +36,7 @@ export const BOOK_LIST = [
     image: 'http://wolox-training.s3.amazonaws.com/uploads/content.jpeg'
   },
   {
-    id: 5,
+    id: '5',
     author: 'Anthony Doerr',
     title: 'All the Light We Cannot See',
     genre: 'suspense',
@@ -45,7 +45,7 @@ export const BOOK_LIST = [
     image: 'http://wolox-training.s3.amazonaws.com/uploads/content.jpeg'
   },
   {
-    id: 6,
+    id: '6',
     author: 'John Katzenbach',
     title: 'The analyst',
     genre: 'thriller',
@@ -55,7 +55,7 @@ export const BOOK_LIST = [
       'http://wolox-training.s3.amazonaws.com/uploads/el-psicoanalista-analyst-john-katzenbach-paperback-cover-art.jpg'
   },
   {
-    id: 7,
+    id: '7',
     author: 'Andy Weir',
     title: 'The Martian',
     genre: 'fiction',
