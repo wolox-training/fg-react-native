@@ -1,11 +1,9 @@
 import { StyleSheet } from 'react-native';
 import { COLORS } from '@constants/colors';
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.LIGHT_BLUE
   }
 });
-
-export default styles;

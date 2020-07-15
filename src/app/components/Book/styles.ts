@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 import { COLORS } from '@constants/colors';
 import { SIZES, WEIGHT_BOLD, WEIGHT_300 } from '@constants/fonts';
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     backgroundColor: COLORS.WHITE,
     borderRadius: 5,
@@ -31,5 +31,3 @@ const styles = StyleSheet.create({
     marginRight: 20
   }
 });
-
-export default styles;
