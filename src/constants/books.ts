@@ -29,7 +29,7 @@ export const BOOK_LIST = [
   {
     id: '4',
     author: 'Paula Hawkins',
-    title: 'The Girl on the Train\n',
+    title: 'The Girl on the Train',
     genre: 'suspense',
     publisher: 'Riverhead Books',
     year: '2015',
