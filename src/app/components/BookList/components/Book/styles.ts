@@ -7,13 +7,16 @@ export default StyleSheet.create({
     backgroundColor: COLORS.WHITE,
     borderRadius: 5,
     marginHorizontal: 20,
-    marginVertical: 10,
+    marginVertical: 5,
     paddingHorizontal: 30,
     paddingVertical: 15,
     justifyContent: 'center'
   },
   content: {
     flexDirection: 'row'
+  },
+  text: {
+    flex: 1
   },
   title: {
     fontSize: SIZES.MEDIUM,
