@@ -10,11 +10,7 @@ const BookList = ({ data }: BookListProps) => {
     <Book id={item.id} title={item.title} author={item.author} image={item.image} />
   );
 
-  return (
-    <>
-      <FlatList<BookProps> data={data} renderItem={renderBook} keyExtractor={keyExtractor} />
-    </>
-  );
+  return <FlatList<BookProps> data={data} renderItem={renderBook} keyExtractor={keyExtractor} />;
 };
 
 export default BookList;
