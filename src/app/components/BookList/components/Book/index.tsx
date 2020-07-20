@@ -10,9 +10,10 @@ import styles from './styles';
 const Book = ({ title, author, image }: BookProps) => {
   const sourceImage = image ? { uri: image } : imagePlaceholder;
   const navigation = useNavigation();
+  const navigate = () => navigation.navigate(ROUTES.DETAIL);
 
   return (
-    <TouchableOpacity onPress={() => navigation.navigate(ROUTES.DETAIL)} style={styles.container}>
+    <TouchableOpacity onPress={navigate} style={styles.container}>
       <View style={styles.content}>
         <Image style={styles.image} source={sourceImage} resizeMode="contain" />
         <View style={styles.text}>
