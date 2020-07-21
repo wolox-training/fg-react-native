@@ -13,15 +13,13 @@ const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <>
-      <NavigationContainer>
-        <StatusBar barStyle="dark-content" />
-        <Stack.Navigator initialRouteName={ROUTES.HOME} screenOptions={{ cardStyle: styles.container }}>
-          <Stack.Screen name={ROUTES.HOME} component={Home} />
-          <Stack.Screen name={ROUTES.DETAIL} component={Detail} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </>
+    <NavigationContainer>
+      <StatusBar barStyle="dark-content" />
+      <Stack.Navigator initialRouteName={ROUTES.HOME} screenOptions={{ cardStyle: styles.container }}>
+        <Stack.Screen name={ROUTES.HOME} component={Home} />
+        <Stack.Screen name={ROUTES.DETAIL} component={Detail} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
