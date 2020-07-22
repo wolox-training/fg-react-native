@@ -4,7 +4,6 @@ import { COLORS } from '@constants/colors';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.LIGHT_BLUE,
-    paddingVertical: 10
+    backgroundColor: COLORS.LIGHT_BLUE
   }
 });

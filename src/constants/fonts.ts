@@ -1,6 +1,7 @@
 export const SIZES = {
   SMALL: 15,
-  MEDIUM: 17
+  MEDIUM: 17,
+  LARGE: 22
 };
 
 export const WEIGHT_BOLD = 'bold';
