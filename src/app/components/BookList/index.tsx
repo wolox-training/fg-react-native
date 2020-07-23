@@ -6,9 +6,7 @@ import Book from './components/Book';
 
 const BookList = ({ data }: BookListProps) => {
   const keyExtractor = ({ id }: BookProps) => String(id);
-  const renderBook: ListRenderItem<BookProps> = ({ item }) => (
-    <Book id={item.id} title={item.title} author={item.author} image={item.image} />
-  );
+  const renderBook: ListRenderItem<BookProps> = ({ item }) => <Book item={item} />;
 
   return <FlatList<BookProps> data={data} renderItem={renderBook} keyExtractor={keyExtractor} />;
 };
