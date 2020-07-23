@@ -1,16 +1,23 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
-import { useRoute } from '@react-navigation/native';
+import { RouteProp } from '@react-navigation/native';
 import imagePlaceholder from '@assets/img_book6.png';
 import { BookProps } from '@interfaces/books';
+import { RootStackParamList } from '@interfaces/rootStack';
 
 import { ADD_TO_WISHLIST, RENT, AVAILABLE } from './constants';
 import styles from './styles';
 
-function Detail() {
-  const route = useRoute();
+type RootProps = RouteProp<RootStackParamList, 'Detail'>;
+
+interface DetailProps {
+  route: RootProps;
+}
+
+function Detail({ route }: DetailProps) {
   const { title, image, author, genre, year } = route.params as BookProps;
   const sourceImage = image ? { uri: image } : imagePlaceholder;
+  // TODO: Remove this.
   const doNothing = () => '';
 
   return (

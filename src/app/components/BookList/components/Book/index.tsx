@@ -8,7 +8,8 @@ import ROUTES from '@constants/routes';
 import styles from './styles';
 
 const Book = ({ item }: ItemProps) => {
-  const sourceImage = item.image ? { uri: item.image } : imagePlaceholder;
+  const { image, title, author } = item;
+  const sourceImage = image ? { uri: image } : imagePlaceholder;
   const navigation = useNavigation();
   const handleGoToDetail = () => navigation.navigate(ROUTES.DETAIL, item);
 
@@ -17,8 +18,8 @@ const Book = ({ item }: ItemProps) => {
       <View style={styles.content}>
         <Image style={styles.image} source={sourceImage} resizeMode="contain" />
         <View style={styles.text}>
-          <Text style={styles.title}>{item.title}</Text>
-          <Text style={styles.author}>{item.author}</Text>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.author}>{author}</Text>
         </View>
       </View>
     </TouchableOpacity>

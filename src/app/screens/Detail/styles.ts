@@ -22,7 +22,8 @@ export default StyleSheet.create({
   title: {
     fontSize: SIZES.LARGE,
     color: COLORS.GREY,
-    fontWeight: WEIGHT_BOLD
+    fontWeight: WEIGHT_BOLD,
+    marginBottom: 5
   },
   data: {
     fontSize: SIZES.SMALL,
@@ -40,8 +41,8 @@ export default StyleSheet.create({
   },
   button: {
     alignItems: 'center',
-    paddingVertical: 20,
-    borderRadius: 50,
+    paddingVertical: 13,
+    borderRadius: 100,
     marginBottom: 10
   },
   buttonPrimary: {
@@ -56,8 +57,7 @@ export default StyleSheet.create({
   },
   buttonText: {
     textTransform: 'uppercase',
-    fontSize: SIZES.MEDIUM,
-    fontWeight: WEIGHT_BOLD
+    fontSize: SIZES.SMALL
   },
   textPrimary: {
     color: COLORS.LIGHT_BLUE_1
