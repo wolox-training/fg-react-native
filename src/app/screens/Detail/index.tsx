@@ -4,11 +4,12 @@ import { RouteProp } from '@react-navigation/native';
 import imagePlaceholder from '@assets/img_book6.png';
 import { BookProps } from '@interfaces/books';
 import { RootStackParamList } from '@interfaces/rootStack';
+import Routes from '@constants/routes';
 
 import { ADD_TO_WISHLIST, RENT, AVAILABLE } from './constants';
 import styles from './styles';
 
-type RootProps = RouteProp<RootStackParamList, 'Detail'>;
+type RootProps = RouteProp<RootStackParamList, Routes.Detail>;
 
 interface DetailProps {
   route: RootProps;

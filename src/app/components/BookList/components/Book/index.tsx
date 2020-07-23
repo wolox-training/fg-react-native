@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { ItemProps } from '@interfaces/books';
 import imagePlaceholder from '@assets/img_book6.png';
-import ROUTES from '@constants/routes';
+import Routes from '@constants/routes';
 
 import styles from './styles';
 
@@ -11,7 +11,7 @@ const Book = ({ item }: ItemProps) => {
   const { image, title, author } = item;
   const sourceImage = image ? { uri: image } : imagePlaceholder;
   const navigation = useNavigation();
-  const handleGoToDetail = () => navigation.navigate(ROUTES.DETAIL, item);
+  const handleGoToDetail = () => navigation.navigate(Routes.Detail, item);
 
   return (
     <TouchableOpacity onPress={handleGoToDetail} style={styles.container}>

@@ -1,6 +1,7 @@
 import { BookProps } from '@interfaces/books';
+import Routes from '@constants/routes';
 
 export type RootStackParamList = {
-  Home: undefined;
-  Detail: BookProps;
+  [Routes.Home]: undefined;
+  [Routes.Detail]: BookProps;
 };
