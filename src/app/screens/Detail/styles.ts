@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '@constants/colors';
+import { WHITE, GREY, LIGHT_BLUE_1, GREEN } from '@constants/colors';
 import { SIZES, WEIGHT_BOLD, WEIGHT_300 } from '@constants/fonts';
 
 export default StyleSheet.create({
   container: {
-    backgroundColor: COLORS.WHITE,
+    backgroundColor: WHITE,
     borderRadius: 5,
     marginHorizontal: 20,
     marginVertical: 5,
@@ -21,18 +21,18 @@ export default StyleSheet.create({
   },
   title: {
     fontSize: SIZES.LARGE,
-    color: COLORS.GREY,
+    color: GREY,
     fontWeight: WEIGHT_BOLD,
     marginBottom: 5
   },
   data: {
     fontSize: SIZES.SMALL,
-    color: COLORS.GREY,
+    color: GREY,
     fontWeight: WEIGHT_300,
     textTransform: 'capitalize'
   },
   available: {
-    color: COLORS.GREEN
+    color: GREEN
   },
   image: {
     height: 110,
@@ -46,23 +46,23 @@ export default StyleSheet.create({
     marginBottom: 10
   },
   buttonPrimary: {
-    backgroundColor: COLORS.WHITE,
-    color: COLORS.LIGHT_BLUE_1,
-    borderColor: COLORS.LIGHT_BLUE_1,
+    backgroundColor: WHITE,
+    color: LIGHT_BLUE_1,
+    borderColor: LIGHT_BLUE_1,
     borderWidth: 2
   },
   buttonSecondary: {
-    backgroundColor: COLORS.LIGHT_BLUE_1,
-    color: COLORS.WHITE
+    backgroundColor: LIGHT_BLUE_1,
+    color: WHITE
   },
   buttonText: {
     textTransform: 'uppercase',
     fontSize: SIZES.SMALL
   },
   textPrimary: {
-    color: COLORS.LIGHT_BLUE_1
+    color: LIGHT_BLUE_1
   },
   textSecondary: {
-    color: COLORS.WHITE
+    color: WHITE
   }
 });
