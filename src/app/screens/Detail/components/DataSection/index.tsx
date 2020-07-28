@@ -18,7 +18,7 @@ function DataSection() {
     <View style={styles.container}>
       <View style={styles.content}>
         <Image style={styles.image} source={sourceImage} resizeMode="contain" />
-        <View>
+        <View style={styles.text}>
           <Text style={styles.title}>{title}</Text>
           <Text style={[styles.data, styles.available]}>{AVAILABLE}</Text>
           <Text style={styles.data}>{author}</Text>

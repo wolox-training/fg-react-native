@@ -8,6 +8,7 @@ export default StyleSheet.create({
     marginTop: 15
   },
   text: {
+    flex: 1,
     paddingBottom: 15,
     borderBottomColor: LIGHT_GREY,
     borderBottomWidth: 1

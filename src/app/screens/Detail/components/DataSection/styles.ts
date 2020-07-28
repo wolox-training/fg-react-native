@@ -16,6 +16,9 @@ export default StyleSheet.create({
     flexDirection: 'row',
     marginBottom: 30
   },
+  text: {
+    flex: 1
+  },
   title: {
     fontSize: SIZES.LARGE,
     color: GREY,
