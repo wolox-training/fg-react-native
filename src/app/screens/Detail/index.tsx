@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { View } from 'react-native';
 import { COMMENTS } from '@constants/commentaries';
 
 import DataSection from './components/DataSection';
@@ -8,10 +8,10 @@ import styles from './styles';
 
 function Detail() {
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
       <DataSection />
       <CommentarySection data={COMMENTS} />
-    </ScrollView>
+    </View>
   );
 }
 

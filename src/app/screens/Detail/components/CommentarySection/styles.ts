@@ -8,7 +8,8 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: 20,
     marginVertical: 5,
-    paddingHorizontal: 15
+    paddingHorizontal: 15,
+    flex: 1
   },
   button: {
     alignItems: 'center',
