@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { useRoute } from '@react-navigation/native';
 import imagePlaceholder from '@assets/img_book6.png';
 import { BookProps } from '@interfaces/books';
-import { useRoute } from '@react-navigation/native';
 
 import { ADD_TO_WISHLIST, RENT, AVAILABLE } from './constants';
 import styles from './styles';
