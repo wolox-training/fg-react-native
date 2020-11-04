@@ -8,6 +8,11 @@ interface TabIcon {
   unfocused: HTMLImageElement;
 }
 
+interface TabBar {
+  Library: TabIcon;
+  Rentals: TabIcon;
+}
+
 const LIBRARY: TabIcon = {
   focused: LibraryActiveIcon,
   unfocused: LibraryIcon
