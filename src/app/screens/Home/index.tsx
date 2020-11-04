@@ -4,10 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Library from '@app/screens/Library';
 import Rentals from '@app/screens/Rentals';
 import Routes from '@constants/routes';
-import LibraryActiveIcon from '@assets/icLibraryActive.png';
-import LibraryIcon from '@assets/icLibrary.png';
-import MyRentalsActiveIcon from '@assets/icMyRentalsActive.png';
-import MyRentalsIcon from '@assets/icMyRentals.png';
+
+import { ROUTES_ICONS, getIcon } from './constants';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,16 +13,9 @@ function Home() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused }) => {
-          let sourceIcon = null;
-
-          if (route.name === Routes.Library) {
-            sourceIcon = focused ? LibraryActiveIcon : LibraryIcon;
-          } else if (route.name === Routes.Rentals) {
-            sourceIcon = focused ? MyRentalsActiveIcon : MyRentalsIcon;
-          }
-          return <Image source={sourceIcon} resizeMode="contain" />;
-        }
+        tabBarIcon: ({ focused }) => (
+          <Image source={getIcon(ROUTES_ICONS[route.name], focused)} resizeMode="contain" />
+        )
       })}>
       <Tab.Screen name={Routes.Library} component={Library} options={{ title: Routes.Library }} />
       <Tab.Screen name={Routes.Rentals} component={Rentals} options={{ title: Routes.Rentals }} />
