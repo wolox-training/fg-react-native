@@ -1,14 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-
-const text = 'Rentals';
+import { View } from 'react-native';
 
 function Rentals() {
-  return (
-    <View>
-      <Text>{text}</Text>
-    </View>
-  );
+  return <View />;
 }
 
 export default Rentals;

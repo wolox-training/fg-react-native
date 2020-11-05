@@ -3,9 +3,8 @@ import { Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Library from '@app/screens/Library';
 import Rentals from '@app/screens/Rentals';
+import { ROUTES_ICONS, getIcon } from '@constants/icons';
 import Routes from '@constants/routes';
-
-import { ROUTES_ICONS, getIcon } from './constants';
 
 const Tab = createBottomTabNavigator();
 
