@@ -1,7 +1,7 @@
 enum Routes {
   Home = 'Home',
   Library = 'Library',
-  Detail = 'Book Detail',
+  Detail = 'Detail',
   Rentals = 'Rentals'
 }
 

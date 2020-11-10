@@ -3,13 +3,13 @@ import React from 'react';
 import { StatusBar, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from '@app/screens/Home';
 import Detail from '@app/screens/Detail';
 import Routes from '@constants/routes';
 import { LIGHT_BLUE_1 } from '@constants/colors';
 import headerImage from '@assets/bcNavbar.png';
 import backButtonIcon from '@assets/icBack.png';
 
+import Home from './screens';
 import styles from './styles';
 
 const Stack = createStackNavigator();
