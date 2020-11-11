@@ -8,7 +8,7 @@ import Routes from '@constants/routes';
 
 const Tab = createBottomTabNavigator();
 
-function Home() {
+function Screens() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -22,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Screens;

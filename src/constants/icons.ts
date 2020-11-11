@@ -1,19 +1,19 @@
-import LibraryActiveIcon from '@assets/icLibraryActive.png';
-import LibraryIcon from '@assets/icLibrary.png';
-import MyRentalsActiveIcon from '@assets/icMyRentalsActive.png';
-import MyRentalsIcon from '@assets/icMyRentals.png';
+import libraryActiveIcon from '@assets/icLibraryActive.png';
+import libraryIcon from '@assets/icLibrary.png';
+import myRentalsActiveIcon from '@assets/icMyRentalsActive.png';
+import myRentalsIcon from '@assets/icMyRentals.png';
 import { TabIcon, TabRoutes } from '@interfaces/tab';
 
 export const BACK_ICON_SIZE = 18;
 
 const LIBRARY: TabIcon = {
-  focused: LibraryActiveIcon,
-  unfocused: LibraryIcon
+  focused: libraryActiveIcon,
+  unfocused: libraryIcon
 };
 
 const RENTALS: TabIcon = {
-  focused: MyRentalsActiveIcon,
-  unfocused: MyRentalsIcon
+  focused: myRentalsActiveIcon,
+  unfocused: myRentalsIcon
 };
 
 export const getIcon = (icon: TabIcon, focus: Boolean) => (focus ? icon.focused : icon.unfocused);

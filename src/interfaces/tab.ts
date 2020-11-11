@@ -1,6 +1,8 @@
+import { ImageSourcePropType } from 'react-native';
+
 export interface TabIcon {
-  focused: HTMLImageElement;
-  unfocused: HTMLImageElement;
+  focused: ImageSourcePropType;
+  unfocused: ImageSourcePropType;
 }
 
 export interface TabRoutes {
