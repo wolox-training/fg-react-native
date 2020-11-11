@@ -1,6 +1,8 @@
 enum Routes {
-  Home = 'Library',
-  Detail = 'Book Detail'
+  Home = 'Home',
+  Library = 'Library',
+  Detail = 'Detail',
+  Rentals = 'Rentals'
 }
 
 export default Routes;

@@ -5,7 +5,7 @@ import { BOOK_LIST } from '@constants/books';
 
 import styles from './styles';
 
-function Home() {
+function Library() {
   return (
     <View style={styles.container}>
       <BookList data={BOOK_LIST} />
@@ -13,4 +13,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Library;
